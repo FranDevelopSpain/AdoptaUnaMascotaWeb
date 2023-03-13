@@ -11,6 +11,10 @@ footer {
     text-align: left;
 }
 
+.logo {
+    text-align: right;
+}
+
 .fb-ic {
     padding-left: 20px;
 }

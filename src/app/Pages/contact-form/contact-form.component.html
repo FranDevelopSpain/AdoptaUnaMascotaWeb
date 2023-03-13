@@ -7,7 +7,7 @@
 
 
 <body>
-    <h1 class="text-center">Registro</h1>
+    <h1 class="text-center">Formulario de contacto</h1>
   <div class="container justify-content-center">
   
     <div id="flotante">
@@ -30,6 +30,33 @@
             </div>
           </div>
         </div>
+
+        <div class="form-group row">
+        <div class="col-12 col-md-6 bloque">
+          <label for="apellidos">*Edad</label>  
+          <input type="text" class="form-control" name="edad" #edad [(ngModel)]="ContactModel.edad" id="edad" required (keyup)="this.validarCamposObligatorios($event)">
+          <div class="invalid-feedback">
+            Introduzca edad, solo números
+          </div>
+        </div>
+     
+         <!--SEXO-->
+         <div class="col-12 col-md-6 bloque">
+          <div>
+            <label> </label>
+            <br>
+            <br>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+            <label class="form-check-label" for="inlineRadio1">Femenino</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+            <label class="form-check-label" for="inlineRadio2">Masculino</label>
+          </div>
+        </div>
+      </div>
     
       <div class="form-group bloque">
         <label for="telefono">*Número de teléfono</label>
@@ -118,18 +145,7 @@
       </div>
     </div>
     
-      <div class="form-group bloque">
-        <label for="contraseña">*Constraseña</label>
-        <input type="password" class="form-control" (keyup)="this.correctPass($event)" name="password" #password [(ngModel)]="ContactModel.password" id="password" required minlength="6" maxlength="6">
-        <small class="form-text text-danger" *ngIf="!this.ContactModel.passCorrecta"> {{this.mensajeError}} </small>
-      </div>
-    
-      <div class="form-group bloque">
-          <label for="repetirContraseña">*Repetir constraseña</label>
-          <input type="password" [disabled]="!this.ContactModel.passCorrecta" (keyup)="this.validatePassword($event)" class="form-control" name="repeatPassword" #repeatPassword [(ngModel)]="ContactModel.repeatPassword" id="repeatPassword" required minlength="6" maxlength="6">
-          <small class="form-text text-danger" *ngIf="!this.ContactModel.repeatPassCorrecta"> {{this.mensajePassword}} </small>
-        </div>
-    
+     
       <div class="form-check bloque">
         <input type="checkbox" class="form-check-input" name="condiciones" #condiciones [(ngModel)]="ContactModel.condiciones" id="checkbox">
         <label class="form-check-label" for="checkbox">Acepto las condiciones</label>

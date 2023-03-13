@@ -98,39 +98,9 @@ export class ContactFormComponent implements OnInit{
       }
     }
   
-    /*METODO PARA VALIDAR LA CONTRASEÑA*/
-    public correctPass(event: any): void {
-      if (this.ContactModel.password.length != 6) {
-        this.ContactModel.passCorrecta = false;
-        this.passWordCorrecta = false;
-        this.mensajeError = 'La contraseña debe tener 6 caracteres';
-      } else {
-        this.ContactModel.passCorrecta = true;
-        this.passWordCorrecta = true;
-      }
-    }
-  
-    /*METODO PARA VALIDAR LA CONTRASEÑA REPETIDA (AMBAS DEBEN COINCIDIR)*/
-    public validatePassword(event: any): void {
-      const repeatpass: string = event.target.value;
-      this.ContactModel.repeatPassCorrecta = false;
-      if (repeatpass != this.ContactModel.password) {
-        this.ContactModel.repeatPassCorrecta = false;
-        this.mensajePassword = 'La contraseña introducida no coincide';
-        this.passWord2Correcta = false;
-      } else {
-        this.ContactModel.repeatPassCorrecta = true;
-        this.passWord2Correcta = true;
-      }
-    }
-  
     /*METODO COMPROBACION DE BOOLENAS DE CAMPOS OBLIGATORIOS PARA ACTIVAR EL BOTON DEL FORMULARIO*/
     public comprobarCamposObligatorios(camposCorrectos: boolean): boolean {
-      if(this.ContactModel.password != this.ContactModel.repeatPassword) {
-        this.passWord2Correcta = false;
-        this.ContactModel.repeatPassCorrecta = false;
-        camposCorrectos = false;
-      } else if(this.nombreCorrecto == true &&
+      if(this.nombreCorrecto == true &&
         this.apellidosCorrectos == true &&
         this.telefonoCorrecto == true &&
         this.mailCorrecto == true &&
