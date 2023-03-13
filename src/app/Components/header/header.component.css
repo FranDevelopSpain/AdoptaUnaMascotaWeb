@@ -24,8 +24,10 @@ img {
 }
 
 .nav-link {
+    font-family: 'Poppins', sans-serif;
     text-align: end;
     color: #292C35 !important;
+    font-size: 1.2rem;
     padding-bottom: 0px !important;
     margin-bottom: 0px !important;
 }
