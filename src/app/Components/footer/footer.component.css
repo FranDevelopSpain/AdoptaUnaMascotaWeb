@@ -1,0 +1,38 @@
+* {
+    box-sizing: border-box;
+}
+
+footer {
+    margin-bottom: 0px;
+}
+
+.icons {
+    text-align: left;
+}
+
+.fb-ic {
+    padding-left: 20px;
+}
+
+.fa {
+    padding-right: 20px;
+    color: #292C35;
+}
+
+img {
+    height: 100px;
+    margin-left: 20px;
+}
+
+h5, p {
+    padding-top: 15px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.footer-copyright {
+    background-color: #D18DBC;
+}
+
+.row {
+    background-color: #EED2E6;
+}

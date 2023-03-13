@@ -1,0 +1,15 @@
+* {
+    box-sizing: border-box;
+}
+
+.navbar {
+    height: 150px;
+    background-color: #EED2E6 !important;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+} 
+
+img {
+    height: 100px;
+    margin-left: 20px;
+}

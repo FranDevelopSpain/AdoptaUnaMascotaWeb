@@ -38,7 +38,7 @@ input {
     font-family: 'Poppins', sans-serif;
     font-weight: 200;
     font-size: 1rem;
-    color: #292C35;
+    color: #292C35
 }
 
 input:focus {
@@ -86,7 +86,7 @@ label {
     font-weight: 400;
     font-size: 1.25rem;
     font-weight: bold;
-    color: #292C35;
+    color: #D18DBC;
 }
 
 button {
