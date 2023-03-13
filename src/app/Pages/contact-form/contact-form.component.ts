@@ -14,7 +14,7 @@ export class ContactFormComponent implements OnInit{
 
   public mensajeError: string;
   public mensajePassword: string;
-  public passWordCorrecta: boolean; //booleanas para comprobacion de las password
+  public edadCorrecta: boolean; //booleanas para comprobacion de las password
   public passWord2Correcta: boolean; //booleanas para comprobacion de las password
   public nombreCorrecto: boolean;
   public apellidosCorrectos: boolean;
@@ -67,6 +67,20 @@ export class ContactFormComponent implements OnInit{
             this.apellidosCorrectos = false;
           }
           break;
+
+          case 'edad':
+            const edadExpresion = {
+                edad: /^\d{2}$/
+                }
+            const inputEdad = document.getElementById('edad');
+            if (edadExpresion.edad.test(evento.target.value)) {
+              inputEdad?.classList.remove('is-invalid');
+              this.edadCorrecta = true;
+            } else {
+              inputEdad?.classList.add('is-invalid');
+              this.edadCorrecta = false;
+            }
+            break;
   
         case 'numeroTelefono':
           const telefonoExpresion = {
@@ -104,8 +118,7 @@ export class ContactFormComponent implements OnInit{
         this.apellidosCorrectos == true &&
         this.telefonoCorrecto == true &&
         this.mailCorrecto == true &&
-        this.passWordCorrecta == true &&
-        this.passWord2Correcta == true) {
+        this.edadCorrecta == true ) {
           camposCorrectos = true;
       } else {
         camposCorrectos = false

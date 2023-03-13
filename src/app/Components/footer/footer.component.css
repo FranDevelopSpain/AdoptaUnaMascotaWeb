@@ -16,7 +16,7 @@ footer {
 }
 
 .fb-ic {
-    padding-left: 20px;
+    padding-left: 40px;
 }
 
 .fa {
@@ -34,10 +34,23 @@ h5, p {
     font-family: 'Poppins', sans-serif;
 }
 
+h5 {
+    font-weight: bold;
+}
+
+p {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
 .footer-copyright {
     background-color: #D18DBC;
 }
 
 .row {
     background-color: #EED2E6;
+}
+
+.fa:hover {
+    color: #8FA5D5;
 }
