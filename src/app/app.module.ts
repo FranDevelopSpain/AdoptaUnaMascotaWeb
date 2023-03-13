@@ -1,3 +1,6 @@
+import { LandingPageModule } from './Pages/landing-page/landing-page.module';
+import { FooterModule } from './Components/footer/footer.module';
+import { HeaderModule } from './Components/header/header.module';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -9,12 +12,14 @@ import { ContactFormModule } from './Pages/contact-form/contact-form.module';
 @NgModule({
   declarations: [
     AppComponent
-
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ContactFormModule
+    ContactFormModule,
+    HeaderModule,
+    FooterModule,
+    LandingPageModule
   ],
   providers: [],
   bootstrap: [AppComponent]

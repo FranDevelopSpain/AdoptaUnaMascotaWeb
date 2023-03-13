@@ -1,29 +1,17 @@
-import { FooterComponent } from './Components/footer/footer.component';
-import { HeaderComponent } from './Components/header/header.component';
-import { ContactFormComponent } from './Pages/contact-form/contact-form.component';
+import { LandingPageComponent } from './Pages/landing-page/landing-page.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
  {
   path: '',
-  redirectTo:'form',
+  redirectTo:'landing',
   pathMatch: 'full'
  },
- 
- {
-  path: 'form',
-  component: ContactFormComponent
- },
 
  {
-  path: 'header',
-  component: HeaderComponent
- },
-
- {
-  path: 'footer',
-  component: FooterComponent
+  path: 'landing',
+  component: LandingPageComponent
  }
 ];
 
