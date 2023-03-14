@@ -8,11 +8,9 @@ export class ContactFormModel {
     public sexo: string;
     public numeroTelefono: number;
     public email: string;
-    public direccion?: string;
+    public direccion: string;
     public localidad?: string;
     public provincia?: string;
     public condiciones: boolean;
     public comentarios?: string;
-    public passCorrecta: boolean;
-    public repeatPassCorrecta: boolean;
 }

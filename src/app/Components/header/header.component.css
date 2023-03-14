@@ -19,7 +19,7 @@
     padding-left: 40px;
 }
 img {
-    height: 100px;
+    height: 200px;
     margin-left: 20px;
 }
 
@@ -27,7 +27,7 @@ img {
     font-family: 'Poppins', sans-serif;
     text-align: end;
     color: #292C35 !important;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     padding-bottom: 0px !important;
     margin-bottom: 0px !important;
 }
@@ -41,3 +41,23 @@ ul {
     margin-bottom: 0px !important;
 }
 
+#adopcion {
+    background-color: #292C35;
+    color: #F7A940 !important;
+    border-radius: 10px;
+    padding: auto;
+    text-align: center;
+    justify-content: center;
+    padding-bottom: 5px !important;
+    margin-left: 10px;
+}
+
+#adopcion:hover {
+    background-color: #F7A940;
+    color: #292C35 !important;
+    border-radius: 10px;
+    padding: auto;
+    text-align: center;
+    justify-content: center;
+    padding-bottom: 5px !important;
+}
