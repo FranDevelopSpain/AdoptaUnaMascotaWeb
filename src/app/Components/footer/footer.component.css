@@ -46,18 +46,15 @@ p {
 }
 
 .row {
-    background-color: #EED2E6;
+    background-color: #eed2e684;
 }
 
 .fa:hover {
     color: #8FA5D5;
 }
 
-.list-group {
-    background-color: #EED2E6 !important;
-}
 
 ul, li {
     padding: 0px;
-    background-color: #EED2E6 !important;
+    background-color: #eed2e600 !important;
 }

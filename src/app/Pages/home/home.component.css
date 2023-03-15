@@ -33,6 +33,7 @@ h1 {
     background-position: center;
     background-repeat: no-repeat;
     height: 700px;
+    margin-top: 150px;
 }
 
 .cta-app {
@@ -46,6 +47,7 @@ h1 {
 
 .form-adopcion {
     padding: 5%;
+    margin-bottom: -100px;
 }
 
 /************************ ELEMENTOS ************************/

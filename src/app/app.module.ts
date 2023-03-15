@@ -7,6 +7,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ContactFormModule } from './Pages/contact-form/contact-form.module';
+import { HomeModule } from './Pages/home/home.module';
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import { ContactFormModule } from './Pages/contact-form/contact-form.module';
     ContactFormModule,
     HeaderModule,
     FooterModule,
-    LandingPageModule
+    LandingPageModule,
+    HomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
