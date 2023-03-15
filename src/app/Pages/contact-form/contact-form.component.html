@@ -15,7 +15,7 @@
   
       <div class="form-group row">
           <div class="col-12 col-md-6 bloque">
-            <label for="nombre">*Nombre</label>
+            <label for="nombre">Nombre <span style="color: #8FA5D5"> *</span> </label>
             <input type="text" class="form-control" name="nombre" #nombre [(ngModel)]="ContactModel.nombre" id="nombre" required  (keyup)="this.validarCamposObligatorios($event)">
             <div class="invalid-feedback">
               Introduzca nombre válido mínimo 3 caracteres
@@ -23,7 +23,7 @@
           </div>
     
           <div class="col-12 col-md-6 bloque">
-            <label for="apellidos">*Apellidos</label>  
+            <label for="apellidos">Apellidos <span style="color: #8FA5D5"> *</span> </label>  
             <input type="text" class="form-control" name="apellidos" #apellidos [(ngModel)]="ContactModel.apellidos" id="apellidos" required (keyup)="this.validarCamposObligatorios($event)">
             <div class="invalid-feedback">
               Introduzca apellidos válidos mínimo 3 caracteres
@@ -33,7 +33,7 @@
 
         <div class="form-group row">
         <div class="col-12 col-md-6 bloque">
-          <label for="apellidos">*Edad</label>  
+          <label for="apellidos">Edad <span style="color: #8FA5D5"> *</span> </label>  
           <input type="text" class="form-control" name="edad" #edad [(ngModel)]="ContactModel.edad" id="edad" required (keyup)="this.validarCamposObligatorios($event)" maxlength="2">
           <div class="invalid-feedback">
             Introduzca edad, solo números, máximo dos dígitos
@@ -58,7 +58,7 @@
       </div>
     
       <div class="form-group bloque">
-        <label for="telefono">*Número de teléfono</label>
+        <label for="telefono">Número de teléfono <span style="color: #8FA5D5"> *</span> </label>
         <input type="text" class="form-control" name="numeroTelefono" #numeroTelefono [(ngModel)]="ContactModel.numeroTelefono" id="telefono" placeholder="916162..." maxlength="9" (keyup)="this.validarCamposObligatorios($event)">
         <div class="invalid-feedback">
           El teléfono debe tener 9 dígitos
@@ -66,7 +66,7 @@
       </div>
     
       <div class="form-group bloque">
-        <label for="mail">*Correo electrónico</label>  
+        <label for="mail">Correo electrónico <span style="color: #8FA5D5"> *</span> </label>  
         <input type="email" class="form-control"  name="email" #email [(ngModel)]="ContactModel.email" id="email" aria-describedby="emailHelp" placeholder="yo@gmail.com" required (keyup)="this.validarCamposObligatorios($event)" >
         <div class="invalid-feedback">
           El correo electrónico debe contener "@"
@@ -74,7 +74,7 @@
       </div>
     
       <div class="form-group bloque">
-        <label for="direccion">*Dirección</label>
+        <label for="direccion">Dirección <span style="color: #8FA5D5"> *</span> </label>
         <input type="text" class="form-control" name="direccion" #direccion [(ngModel)]="ContactModel.direccion" id="direccion" placeholder="Calle / Avenida ..." required (keyup)="this.validarCamposObligatorios($event)" minlength="5">
         <div class="invalid-feedback">
           Introduzca dirección, mínimo 5 caracteres
@@ -162,7 +162,7 @@
       </div>
   
       <div>
-        <small class="form-text text-muted">Los campos con asterisco * son obligatorios</small>
+        <small class="form-text text-muted">Los campos obligatorios están marcados con *</small>
       </div>
     
       <div class="form-group bloque" id="botones">
