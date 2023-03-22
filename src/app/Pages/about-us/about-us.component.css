@@ -7,9 +7,11 @@ body {
     justify-items: center !important;
     align-items: center !important;
     margin: auto;
+    font-family: 'Poppins', sans-serif;
 }
 
 h1 {
+    text-align: center;
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
     font-size: 5rem;
@@ -19,4 +21,84 @@ h1 {
     font-weight: bold;
     text-shadow: 5px 5px 4px #8FA5D5;
     margin-top: 160px;
+}
+
+h6 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    color: #8FA5D5; 
+}
+
+.card-img-top {
+    height: 18rem !important;
+    object-fit: cover !important;
+    border-radius: 5px;
+    padding-top: 10px;
+}
+
+.card {
+    margin: 10px;
+    border-color: #D18DBC;
+    border-width: 2px;
+}
+
+.dos {
+    justify-content: space-evenly;
+}
+
+.img-fluid {
+    width: 300px;
+}
+
+#logo {
+    margin: 0;
+    text-align: center;
+}
+
+.btn-link {
+    color: #D18DBC;
+}
+
+#adopta {
+    color: #8FA5D5;
+    font-weight: bold;
+}
+
+#rosa {
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #D18DBC;
+    margin-bottom: 10px;
+}
+
+#azul {
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #8FA5D5;
+    margin-bottom: 10px;
+}
+
+#amarillo {
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #F7A940;
+    margin-bottom: 10px;
+}
+
+#filaTres {
+    padding: 10px;
+}
+
+#imagenTres, #imagenUno{
+    float: left;
+    width: 150px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#imagenDos {
+    float: right;
+    width: 150px;
+    padding: 10px;
+    border-radius: 10px; 
 }
