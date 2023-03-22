@@ -1,0 +1,160 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+    justify-content: center !important;
+    justify-items: center !important;
+    align-items: center !important;
+    margin: auto;
+}
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 5rem;
+    padding: 20px;
+    margin-top: 50px;
+    color: #292C35;
+    font-weight: bold;
+    text-shadow: 5px 5px 4px #8FA5D5;
+    margin-top: 160px;
+}
+
+form {
+    width: 100%;
+    justify-self: center !important;
+    justify-content: center !important;
+    align-items: center !important;
+    text-align: left;
+}
+section {
+    margin: auto;
+    padding: 20px;  
+}
+
+.row {
+    padding: auto;
+    margin: auto;
+}
+
+.container {
+    justify-content: center !important;
+    justify-items: center !important;
+    align-items: center;
+    margin: auto;
+}
+
+#flotante {
+    padding: 40px;
+}
+
+input {
+    padding: 10px;
+    border-color: #D18DBC;
+    border-width: 2px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200;
+    font-size: 1rem;
+    color: #292C35
+}
+
+input:focus {
+    box-shadow: 0 0 5px #F7A940;
+    border-width: 2px;
+    padding: 10px;
+    border-color: #F7A940;
+    background-color:whitesmoke;
+}
+
+::placeholder {
+    padding: 5px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200;
+    font-size: 1rem;
+    color: #292C35;
+}
+
+
+label {
+    padding: 5px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #8FA5D5;
+}
+
+button {
+    padding: 10px;
+    margin: 10px;
+    background-color: #8FA5D5;
+    border-color: white;
+    border-width: 2px;
+    width: 120px;
+    font-family: 'Poppins', sans-serif;
+    font-size: large;
+    transition-duration: 0.2s;
+}
+
+button:hover {
+    padding: 10px;
+    margin: 10px;
+    background-color: white;
+    border-color: #8FA5D5;
+    color: #292C35;
+    border-width: 2px;
+    width: 120px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: large;
+    box-shadow: 12px 12px 2px 1px;
+}
+
+button:disabled {
+    padding: 10px;
+    margin: 10px;
+    background-color: #8FA5D5;
+    border-color: white;
+    border-width: 2px;
+    width: 120px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: large;
+}
+
+textarea {
+    padding: 10px;
+    border-color: #D18DBC;
+    border-width: 2px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200;
+    font-size: 1rem;
+    color: #292C35;
+}
+
+#textArea:focus {
+    box-shadow: 0 0 5px #F7A940;
+    border-width: 2px;
+    padding: 10px;
+    border-color: #F7A940;
+    background-color:whitesmoke;
+}
+
+#informacion {
+    margin-top: 20px;
+    text-align: left;
+    font-family: 'Poppins', sans-serif;
+    color: #8FA5D5
+}
+
+#informacion h5 {
+    font-weight: bold;
+
+}
+
+svg {
+    color: #D18DBC;
+}
+

@@ -1,0 +1,22 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    justify-content: center !important;
+    justify-items: center !important;
+    align-items: center !important;
+    margin: auto;
+}
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 5rem;
+    padding: 20px;
+    margin-top: 50px;
+    color: #292C35;
+    font-weight: bold;
+    text-shadow: 5px 5px 4px #8FA5D5;
+    margin-top: 160px;
+}

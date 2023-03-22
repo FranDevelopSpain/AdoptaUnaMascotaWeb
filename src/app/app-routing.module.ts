@@ -1,6 +1,6 @@
-import { LandingPageComponent } from './Pages/landing-page/landing-page.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { ContactUsComponent } from './Pages/ContactUs/contact-us.component';
 import { HomeComponent } from './Pages/home/home.component';
 
 const routes: Routes = [
@@ -13,6 +13,10 @@ const routes: Routes = [
   {
     path: "home",
     component: HomeComponent
+  },
+  {
+    path: "contactUs",
+    component: ContactUsComponent
   }
 ];
 

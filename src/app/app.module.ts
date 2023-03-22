@@ -8,6 +8,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ContactFormModule } from './Pages/contact-form/contact-form.module';
 import { HomeModule } from './Pages/home/home.module';
+import { ContactUsModule } from './Pages/ContactUs/contact-us.module';
+import { AboutUsModule } from './Pages/about-us/about-us.module';
 
 
 @NgModule({
@@ -21,7 +23,9 @@ import { HomeModule } from './Pages/home/home.module';
     HeaderModule,
     FooterModule,
     LandingPageModule,
-    HomeModule
+    HomeModule,
+    ContactUsModule,
+    AboutUsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
