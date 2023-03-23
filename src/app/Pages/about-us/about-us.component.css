@@ -3,6 +3,7 @@
 }
 
 body {
+    font-family: 'Poppins', sans-serif;
     justify-content: center !important;
     justify-items: center !important;
     align-items: center !important;
@@ -40,8 +41,11 @@ h6 {
     margin: 10px;
     border-color: #D18DBC;
     border-width: 2px;
+    box-shadow: 0px 0px 8px 8px rgba(240,240,240,1);
 }
-
+.uno {
+    justify-content: center;
+}
 .dos {
     justify-content: space-evenly;
 }
@@ -65,21 +69,21 @@ h6 {
 }
 
 #rosa {
-    padding: 10px;
+    padding: 15px;
     border-radius: 10px;
     background-color: #D18DBC;
     margin-bottom: 10px;
 }
 
 #azul {
-    padding: 10px;
+    padding: 15px;
     border-radius: 10px;
     background-color: #8FA5D5;
     margin-bottom: 10px;
 }
 
 #amarillo {
-    padding: 10px;
+    padding: 15px;
     border-radius: 10px;
     background-color: #F7A940;
     margin-bottom: 10px;
