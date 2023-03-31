@@ -5,6 +5,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { LandingPageComponent } from './landing-page.component';
 import { HeaderModule } from 'src/app/Components/header/header.module';
+import { CookiesModule } from 'src/app/Components/cookies/cookies.module';
 
 
 @NgModule({
@@ -16,7 +17,8 @@ import { HeaderModule } from 'src/app/Components/header/header.module';
     RouterModule,
     HeaderModule,
     FooterModule,
-    ContactFormModule
+    ContactFormModule,
+    CookiesModule
   ]
 })
 export class LandingPageModule { }

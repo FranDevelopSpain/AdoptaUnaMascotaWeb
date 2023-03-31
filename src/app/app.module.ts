@@ -10,6 +10,7 @@ import { ContactFormModule } from './Pages/contact-form/contact-form.module';
 import { HomeModule } from './Pages/home/home.module';
 import { ContactUsModule } from './Pages/ContactUs/contact-us.module';
 import { AboutUsModule } from './Pages/about-us/about-us.module';
+import { CookiesModule } from './Components/cookies/cookies.module';
 
 
 @NgModule({
@@ -25,7 +26,8 @@ import { AboutUsModule } from './Pages/about-us/about-us.module';
     LandingPageModule,
     HomeModule,
     ContactUsModule,
-    AboutUsModule
+    AboutUsModule,
+    CookiesModule
   ],
   providers: [],
   bootstrap: [AppComponent]
