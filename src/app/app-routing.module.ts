@@ -6,6 +6,7 @@ import { AboutUsComponent } from './Pages/about-us/about-us.component';
 import { ContactUsComponent } from './Pages/ContactUs/contact-us.component';
 import { HomeComponent } from './Pages/home/home.component';
 import { LandingPageComponent } from './Pages/landing-page/landing-page.component';
+import { PrivacyPolicyComponent } from './Pages/privacy-policy/privacy-policy.component';
 
 const routes: Routes = [
 
@@ -41,6 +42,10 @@ const routes: Routes = [
       {
         path: "formularioAdopcion",
         component: ContactFormComponent
+      },
+      {
+        path: "politica-privacidad",
+        component: PrivacyPolicyComponent
       }
     ]
   }
