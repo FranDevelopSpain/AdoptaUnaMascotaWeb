@@ -1,3 +1,4 @@
+import { FaqsModule } from './Pages/faqs/faqs.module';
 import { LandingPageModule } from './Pages/landing-page/landing-page.module';
 import { FooterModule } from './Components/footer/footer.module';
 import { HeaderModule } from './Components/header/header.module';
@@ -31,7 +32,8 @@ import { CookiesPolicyModule } from './Pages/cookies-policy/cookies-policy.modul
     AboutUsModule,
     CookiesModule,
     PrivacyPolicyModule,
-    CookiesPolicyModule
+    CookiesPolicyModule,
+    FaqsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

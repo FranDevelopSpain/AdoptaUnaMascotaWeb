@@ -8,4 +8,4 @@ import { FaqsComponent } from './faqs.component';
     exports: [ FaqsComponent ],
     providers: [],
 })
-export class FeatureModule {}
+export class FaqsModule {}
