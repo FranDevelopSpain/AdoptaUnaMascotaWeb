@@ -8,6 +8,7 @@ import { HomeComponent } from './Pages/home/home.component';
 import { LandingPageComponent } from './Pages/landing-page/landing-page.component';
 import { PrivacyPolicyComponent } from './Pages/privacy-policy/privacy-policy.component';
 import { CookiesPolicyComponent } from './Pages/cookies-policy/cookies-policy.component';
+import { FaqsComponent } from './Pages/faqs/faqs.component';
 
 const routes: Routes = [
 
@@ -51,6 +52,10 @@ const routes: Routes = [
       {
         path: "politica-cookies",
         component: CookiesPolicyComponent
+      },
+      {
+        path: "faqs",
+        component: FaqsComponent
       }
     ]
   }
