@@ -7,20 +7,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CookiesComponent implements OnInit{
 
-  mostrar = false; 
+  constructor(){}
 
-  constructor(){
-    
+  ngOnInit(): void {
+    setTimeout(() => {
+      const cookieWrapper = document.querySelector(".wrapper");
+      cookieWrapper?.classList.add("appear");
+    }, 100);
   }
-
-  ngOnInit(): void {}
 
   accept() {
     const cookie = document.cookie = "Esto son las cookies de AUM; max-age="+60*60*24*30;
-    const cookieWrapper = document.querySelector(".wrapper");
-    
+    const backgroundCookie = document.querySelector(".background-cookies");
+
     localStorage.setItem("cookie", cookie);
-    cookieWrapper?.classList.add("hide");
-    
+    backgroundCookie?.classList.add("hide");
   }
 }
