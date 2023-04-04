@@ -7,6 +7,7 @@ import { ContactUsComponent } from './Pages/ContactUs/contact-us.component';
 import { HomeComponent } from './Pages/home/home.component';
 import { LandingPageComponent } from './Pages/landing-page/landing-page.component';
 import { PrivacyPolicyComponent } from './Pages/privacy-policy/privacy-policy.component';
+import { CookiesPolicyComponent } from './Pages/cookies-policy/cookies-policy.component';
 
 const routes: Routes = [
 
@@ -46,6 +47,10 @@ const routes: Routes = [
       {
         path: "politica-privacidad",
         component: PrivacyPolicyComponent
+      },
+      {
+        path: "politica-cookies",
+        component: CookiesPolicyComponent
       }
     ]
   }
