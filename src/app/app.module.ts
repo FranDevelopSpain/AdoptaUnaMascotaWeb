@@ -14,6 +14,7 @@ import { AboutUsModule } from './Pages/about-us/about-us.module';
 import { CookiesModule } from './Components/cookies/cookies.module';
 import { PrivacyPolicyModule } from './Pages/privacy-policy/privacy-policy.module';
 import { CookiesPolicyModule } from './Pages/cookies-policy/cookies-policy.module';
+import { BlogModule } from './Pages/blog/blog.module';
 
 
 @NgModule({
@@ -33,7 +34,8 @@ import { CookiesPolicyModule } from './Pages/cookies-policy/cookies-policy.modul
     CookiesModule,
     PrivacyPolicyModule,
     CookiesPolicyModule,
-    FaqsModule
+    FaqsModule,
+    BlogModule
   ],
   providers: [],
   bootstrap: [AppComponent]

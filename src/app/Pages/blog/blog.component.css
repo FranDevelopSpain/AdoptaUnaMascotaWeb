@@ -1,0 +1,47 @@
+@font-face {
+    font-family: poppins-bold;
+    src: url(/assets/fonts/Poppins-Bold.ttf) format("opentype");
+}
+
+@font-face {
+    font-family: poppins-extraLight;
+    src: url(/assets/fonts/Poppins-ExtraLight.ttf) format("opentype");
+}
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 5rem;
+    padding: 20px;
+    margin-top: 50px;
+    color: #292C35;
+    font-weight: bold;
+    text-shadow: 5px 5px 4px #8FA5D5;
+    margin-top: 160px;
+}
+
+h3, h2 {
+    font-family: "poppins-bold";
+    padding-bottom: 1%;
+}
+
+h5 {
+    font-family: "poppins-extraLight";
+}
+
+p {
+    font-size: large;
+}
+
+a {
+    color: #D18DBC;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.custom-bckg {
+    background-image: url("src/assets/images/blog/entrada-0.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+

@@ -9,6 +9,7 @@ import { LandingPageComponent } from './Pages/landing-page/landing-page.componen
 import { PrivacyPolicyComponent } from './Pages/privacy-policy/privacy-policy.component';
 import { CookiesPolicyComponent } from './Pages/cookies-policy/cookies-policy.component';
 import { FaqsComponent } from './Pages/faqs/faqs.component';
+import { BlogComponent } from './Pages/blog/blog.component';
 
 const routes: Routes = [
 
@@ -56,6 +57,10 @@ const routes: Routes = [
       {
         path: "faqs",
         component: FaqsComponent
+      },
+      {
+        path: "blog",
+        component: BlogComponent
       }
     ]
   }
