@@ -82,3 +82,20 @@ a:hover {
 .custom-link {
     list-style: none;
 }
+
+h4, i {
+    color: #D18DBC;
+    font-family: "poppins-extraLight";
+    padding-bottom: 10px;
+    font-weight: bold;
+}
+
+.subtitle {
+    font-weight: bold;
+    color: #D18DBC;
+}
+
+.section-title {
+    font-weight: 700;
+    font-family: "poppins-extraLight";
+}
