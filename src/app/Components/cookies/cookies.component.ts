@@ -22,5 +22,6 @@ export class CookiesComponent implements OnInit{
 
     localStorage.setItem("cookie", cookie);
     backgroundCookie?.classList.add("hide");
+    location.reload();
   }
 }
