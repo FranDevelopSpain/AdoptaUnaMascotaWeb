@@ -4,9 +4,6 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    justify-content: center !important;
-    justify-items: center !important;
-    align-items: center;
 }
 
 h1 {
@@ -27,21 +24,17 @@ p {
     padding: 20px;
     color: #292C35;
 }
-#info {
-    padding-left: 50px;
-    padding-right: 50px;
-}
 
 form {
     padding: 10px;
 }
-
+/*
 .container {
     justify-content: center !important;
     justify-items: center !important;
     align-items: center;
 }
-
+*/
 input {
     padding: 10px;
     border-color: #8FA5D5;
@@ -139,7 +132,7 @@ button:disabled {
 }
 
 #flotante {
-    background:rgba(255,255,255,0.4);
+    background:rgba(255,255,255,0.8);
     border-radius: 20px;
     padding: 20px;
     margin-left: 100px;
@@ -177,3 +170,26 @@ textarea {
     color: #8FA5D5;
     background-color: #8FA5D5;
 }
+
+
+#info {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding-left: 50px;
+    padding-right: 50px;
+    font-weight: bold !important;
+  }
+
+  #info p {
+    text-align: left !important;
+  }
+  
+  #imagen {
+    width: 400px;
+    height: 200px;
+    margin-left: 80px;
+    border-radius: 50% !important;
+    object-fit: cover;
+  }
+  
