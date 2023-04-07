@@ -35,7 +35,7 @@ h6 {
 .card-img-top {
     height: 18rem !important;
     object-fit: cover !important;
-    border-radius: 5px;
+    border-radius: 5%;
     padding-top: 10px;
 }
 
@@ -113,14 +113,14 @@ h6 {
     float: left;
     width: 300px;
     padding: 10px;
-    border-radius: 10px;
+    border-radius: 10% !important;
 }
 
 #imagenDos {
     float: right;
     width: 300px;
     padding: 10px;
-    border-radius: 10px; 
+    border-radius: 10% !important; 
 }
 
 .container {
