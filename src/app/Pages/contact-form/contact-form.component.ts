@@ -9,8 +9,9 @@ import { ContactFormModel } from 'src/app/Models/ContactFormModel';
 })
 export class ContactFormComponent implements OnInit{
 
-  ContactModel = new ContactFormModel(); //creamos una instancia de nuestro modelo
+  /*CREAMOS NUESTRAS VARIABLES Y NUESTRA VARIABLE DEL MODELO "CONTACTMODEL"*/
 
+  ContactModel = new ContactFormModel(); //creamos una instancia de nuestro modelo
 
   public mensajeError: string;
   public mensajePassword: string;
@@ -31,12 +32,7 @@ export class ContactFormComponent implements OnInit{
   }
 
 
-    /*CREAMOS NUESTRAS VARIABLES Y NUESTRA VARIABLE DEL MODELO "CONTACTMODEL"*/
-  
-
-  
     onSubmit(formulario: NgForm) {
-      //llamamos al servicio y el método que contiene
       alert('Formulario enviado correctamente');
     }
 
@@ -125,12 +121,12 @@ export class ContactFormComponent implements OnInit{
   
     /*METODO COMPROBACION DE BOOLENAS DE CAMPOS OBLIGATORIOS PARA ACTIVAR EL BOTON DEL FORMULARIO*/
     public comprobarCamposObligatorios(camposCorrectos: boolean): boolean {
-      if(this.nombreCorrecto == true &&
-        this.apellidosCorrectos == true &&
-        this.telefonoCorrecto == true &&
-        this.mailCorrecto == true &&
-        this.edadCorrecta == true &&
-        this.direccionCorrecta == true) {
+      if(this.nombreCorrecto &&
+        this.apellidosCorrectos &&
+        this.telefonoCorrecto &&
+        this.mailCorrecto &&
+        this.edadCorrecta &&
+        this.direccionCorrecta) {
           camposCorrectos = true;
       } else {
         camposCorrectos = false

@@ -18,13 +18,13 @@
     </div>
 
     <div class="col-lg-7">
-      <form>
+      <form (ngSubmit)="onSubmit(contactUs)" #contactUs="ngForm" id="formulario">
         <div class="row">
             <div class="row mb-4">
 
               <div class="col-6">
                 <label for="nombre">Nombre <span style="color: #8FA5D5"> *</span> </label>
-                <input type="text" class="form-control" name="nombre" id="nombre" required>
+                <input type="text" class="form-control" name="nombre" #nombre [(ngModel)]="ContactUsForm.nombre" id="nombre" required (keyup)="this.validarCamposObligatorios($event)">
                 <div class="invalid-feedback">
                   Introduzca nombre válido mínimo 3 caracteres
                 </div>
@@ -33,7 +33,7 @@
               <div class="col-6">
                 <div class="form-outline">
                   <label for="telefono">Teléfono<span style="color: #8FA5D5"> *</span></label>
-                  <input type="text" class="form-control" id="telefono" placeholder="916162..." maxlength="9" required>
+                  <input type="text" class="form-control" name="numeroTelefono" #numeroTelefono [(ngModel)]="ContactUsForm.numeroTelefono" id="telefono"  placeholder="916162..." maxlength="9" required (keyup)="this.validarCamposObligatorios($event)">
                   <div class="invalid-feedback">
                     El teléfono debe tener 9 dígitos
                   </div>
@@ -43,18 +43,21 @@
             </div>
             <div class="form-outline mb-4">
               <label for="mail">Correo electrónico <span style="color: #8FA5D5"> *</span> </label>  
-              <input type="email" class="form-control"  id="email" aria-describedby="emailHelp" placeholder="yo@gmail.com" required>
+              <input type="email" class="form-control"  name="email" #email [(ngModel)]="ContactUsForm.email" id="email" aria-describedby="emailHelp" placeholder="yo@gmail.com" required (keyup)="this.validarCamposObligatorios($event)">
               <div class="invalid-feedback">
                 El correo electrónico debe contener "@"
               </div>
             </div>
             <div class="form-outline mb-4">
               <label for="comentarios">Mensaje<span style="color: #8FA5D5"> *</span></label>
-              <textarea class="form-control" rows="3" required></textarea>
+              <textarea class="form-control" rows="3" name="mensaje" #mensaje [(ngModel)]="ContactUsForm.mensaje" id="mensaje"  required (keyup)="this.validarCamposObligatorios($event)"> </textarea>
+              <div class="invalid-feedback">
+                El mensaje debe tener al menos 3 caracteres
+              </div>
             </div>
             <div class="text-center text-md-start">
               <div class="form-group bloque" id="botones">
-                <button type="submit" class="btn btn-primary">Enviar</button>
+                <button type="submit" class="btn btn-primary" [disabled]="!this.comprobarCamposObligatorios(camposCorrectos)">Enviar</button>
               </div>
             </div>
         </div>
