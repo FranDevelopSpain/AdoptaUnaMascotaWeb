@@ -29,10 +29,10 @@
       <div class="form-group row">
           <div class="col-12 col-md-6 bloque">
             <label for="nombre">Nombre <span style="color: #8FA5D5"> *</span> </label>
-            <input type="text" class="form-control" name="nombre" #nombre [(ngModel)]="ContactModel.nombre" id="nombre" required  (keyup)="this.validarCamposObligatorios($event)">
+            <input type="text" class="form-control" name="nombre" #nombre [(ngModel)]="ContactModel.nombre" id="nombre" minlength="3" (keyup)="this.validarCamposObligatorios($event)">
             <div class="invalid-feedback">
-              Introduzca nombre válido mínimo 10 caracteres
-            </div>
+              Introduzca nombre válido mínimo 3 caracteres
+          </div>
           </div>
     
           <div class="col-12 col-md-6 bloque">

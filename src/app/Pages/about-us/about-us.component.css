@@ -16,7 +16,6 @@ h1 {
     font-weight: bold;
     font-size: 5rem;
     padding: 20px;
-    margin-top: 50px;
     color: #292C35;
     font-weight: bold;
     text-shadow: 5px 5px 4px #8FA5D5;
@@ -49,14 +48,14 @@ h6 {
     justify-content: center;
     animation-name: slideInRight;
     animation-duration: 4s;
-    animation-delay: 1s;
+    animation-delay: 0s;
     animation-fill-mode: forwards;
 }
 .dos {
     justify-content: space-evenly;
     animation-name: slideInLeft;
     animation-duration: 5s;
-    animation-delay: 1s;
+    animation-delay: 0.5s;
     animation-fill-mode: forwards;
 }
 
