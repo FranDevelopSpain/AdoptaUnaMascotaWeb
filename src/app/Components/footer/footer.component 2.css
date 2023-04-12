@@ -1,10 +1,5 @@
 * {
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-}
-
-footer {
-    width: 100% !important;
 }
 
 .custom-footer {
@@ -27,12 +22,11 @@ footer {
     height:100%;
 }
 
-.bi {
+.fa {
     padding: 15px 30px 15px 0px;
     color:  var(--bs-body-color);
-    font-size: large;
 }
 
-.bi:hover {
+.fa:hover {
     color: #8FA5D5;
 }

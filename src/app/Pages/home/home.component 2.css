@@ -1,0 +1,92 @@
+/* FUENTES */
+
+@font-face {
+    font-family: poppins-bold;
+    src: url(/assets/fonts/Poppins-Bold.ttf) format("opentype");
+}
+
+@font-face {
+    font-family: poppins-extraLight;
+    src: url(/assets/fonts/Poppins-ExtraLight.ttf) format("opentype");
+}
+
+h1 {
+    font-family: "poppins-bold";
+ }
+
+ h2, h4 {
+     font-family: "poppins-extraLight";
+ }
+
+/* IMÁGENES */
+
+.image-home {
+    height: 60%;
+}
+
+/* CONTENEDORES */
+
+.introduccion {
+    padding: 5%;
+    background-image: url("/assets/images/header.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 700px;
+    margin-top: 150px;
+}
+
+.introduccion-sm {
+    padding: 5%;
+    background-image: url("/assets/images/header.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: 150px;
+    height: 300px;
+}
+
+.cta-app {
+    padding: 5%;
+    background-color: #f6f6f6;
+}
+
+.detalles-app {
+    padding: 5%;
+}
+
+.form-adopcion {
+    padding: 5%;
+    margin-bottom: -100px;
+}
+
+/************************ ELEMENTOS ************************/
+
+/* BOTONES */
+
+.boton-resalte {
+    background-color: #F6A83F;
+    border-color: #F6A83F;
+}
+
+/* DETALLES APP */
+
+.testimonial-card .card-up {
+    height: 120px;
+    overflow: hidden;
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+  }
+
+.testimonial-card .avatar {
+    width: 110px;
+    margin-top: -60px;
+    overflow: hidden;
+    border: 3px solid #fff;
+    border-radius: 50%;
+}
+
+
+
+
+
