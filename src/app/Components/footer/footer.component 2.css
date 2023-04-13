@@ -30,3 +30,7 @@
 .fa:hover {
     color: #8FA5D5;
 }
+
+.text-reset:hover {
+    color: #8FA5D5 !important;
+}
