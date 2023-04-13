@@ -35,7 +35,7 @@ footer {
 }
 
 .bi:hover {
-    color: #8FA5D5;
+    color: #8FA5D5 !important;
 }
 
 .fa {
@@ -45,7 +45,7 @@ footer {
 }
 
 .fa:hover {
-    color: #8FA5D5;
+    color: #8FA5D5 !important;
 }
 
 .text-reset:hover {
