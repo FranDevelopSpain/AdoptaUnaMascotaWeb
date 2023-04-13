@@ -66,3 +66,36 @@ ul {
     justify-content: center;
     padding-bottom: 5px !important;
 }
+
+@media  (max-width: 768px) {
+    .navbar {
+        height: 280px !important;
+    } 
+
+    ul li {
+        justify-content: left;
+        margin-right: auto;
+        margin-left: 20px;
+        margin-top: 0px;
+    }
+
+    #adopcion {
+        justify-content: right;
+        margin-left: auto;
+        margin-right: 0px;
+        width: 180px;
+        margin-top: 5px;
+    }
+
+    img {
+        height: 100px;
+        margin-top: 0px;
+        margin-left: 20px;
+    }
+
+    .nav-link {
+        font-size: 0.9rem;
+    }
+
+  }
+  

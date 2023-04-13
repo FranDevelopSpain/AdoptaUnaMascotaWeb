@@ -29,11 +29,22 @@ footer {
 
 .bi {
     padding: 15px 30px 15px 0px;
-    color:  var(--bs-body-color);
+    /*/color:  var(--bs-body-color);*/
+    color: black !important;
     font-size: large;
 }
 
 .bi:hover {
+    color: #8FA5D5;
+}
+
+.fa {
+    padding: 15px 30px 15px 0px;
+    color: black !important;
+    /*color:  var(--bs-body-color);*/
+}
+
+.fa:hover {
     color: #8FA5D5;
 }
 
