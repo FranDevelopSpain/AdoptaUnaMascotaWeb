@@ -1,129 +1,269 @@
-<!-- AÑADIR HEADER -->
-<app-header></app-header>
 
-<div class="row introduccion">
-    <div class="col-md-5" style="margin-top: 15%; text-align: right;">
-        <h1>Adopta Una Mascota</h1>
-        <h2><b>La aplicación con la que dar una segunda oportunidad</b></h2>
-        <br>
-        <a href="#cta" type="button" class="btn btn-primary boton-resalte">Descarga la app</a>
-    </div>
-    <div class="col-md-7" style="text-align: center;">
-        <img class="image-home" src="/assets/images/mockup1.png">
-    </div>
-</div>
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+</head>
 
-<div class="row detalles-app">
-    <div class="row d-flex justify-content-center">
+<!-- INICIO CABECERA -->
+<section class="container-fluid d-none d-md-block">
+    <div class="row introduccion">
+        <div class="col-md-6" style="margin-top: 150px; text-align: right;">
+            <h1>Adopta Una Mascota</h1>
+            <h2 style="font-weight: 700;">La aplicación con la que <br class="d-md-none d-lg-block"> dar una segunda oportunidad</h2>
+            <br>
+            <a href="#cta" type="button" class="btn btn-primary boton-resalte">Descarga la app</a>
+        </div>
+        <div class="col-md-6">
+            <img class="image-home" src="/assets/images/mockup1.png">
+        </div>
+    </div>
+    <div class="row introduccion-sm d-md-none d-sm-block text-center">
+        <div class="col-md-6" style="margin-top: 5%;">
+            <h1>Adopta Una Mascota</h1>
+            <h2><b>La aplicación con la que dar una segunda oportunidad</b></h2>
+            <br>
+            <a href="#cta" type="button" class="btn btn-primary boton-resalte">Descarga la app</a>
+        </div>
+    </div>
+</section>
+<section class="container-fluid d-md-none d-sm-block">
+    <div class="row introduccion-sm text-center">
+        <div class="col-12" style="margin-top: 5%;">
+            <h1>Adopta Una Mascota</h1>
+            <h2><b>La aplicación con la que dar una segunda oportunidad</b></h2>
+            <br>
+            <a href="#cta" type="button" class="btn btn-primary boton-resalte">Descarga la app</a>
+        </div>
+    </div>
+</section>
+<!-- FIN CABECERA -->
+
+<!-- INICIO DETALLES APP -->
+<section class="container py-5">
+    <div class="row detalles-app">
+        <div class="row d-flex justify-content-center">
+            <div class="col-md-10 col-xl-8 text-center">
+                <h1>¿Qué ofrecemos?</h1>
+                <p class="mb-4 pb-2 mb-md-5 pb-md-0">
+                    AUM es una iniciativa que tiene como objetivo ofrecer una nueva vida a la multitud de mascotas sin
+                    hogar que hay en España
+                </p>
+            </div>
+        </div>
+    
+        <div class="row text-center d-flex align-items-stretch">
+            <div class="col-md-4 mb-5 mb-md-0 d-flex align-items-stretch">
+                <div class="card testimonial-card">
+                    <div class="card-up" style="background-color: #EED1E6;"></div>
+                    <div class="avatar mx-auto bg-white">
+                        <img src="/assets/images/cercania.png"
+                            class="rounded-circle img-fluid" />
+                    </div>
+                    <div class="card-body">
+                        <h4 class="mb-4">Cercanía</h4>
+                        <hr />
+                        <p class="dark-grey-text mt-4">
+                            Ponemos en contacto a particulares o protectoras con personas que busquen un nuevo compañero de vida
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-5 mb-md-0 d-flex align-items-stretch">
+                <div class="card testimonial-card">
+                    <div class="card-up" style="background-color: #8EA4D4;"></div>
+                    <div class="avatar mx-auto bg-white">
+                        <img src="/assets/images/seguridad.png"
+                            class="rounded-circle img-fluid" />
+                    </div>
+                    <div class="card-body">
+                        <h4 class="mb-4">Seguridad</h4>
+                        <hr />
+                        <p class="dark-grey-text mt-4">
+                            Supervisamos las entrevistas previas 
+                            a la entrega de la mascota y tratamos tus datos con precaución
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-0 d-flex align-items-stretch">
+                <div class="card testimonial-card">
+                    <div class="card-up" style="background-color: #F6A83F;"></div>
+                    <div class="avatar mx-auto bg-white">
+                        <img src="/assets/images/asistencia.png"
+                            class="rounded-circle img-fluid" />
+                    </div>
+                    <div class="card-body">
+                        <h4 class="mb-4">Asistencia continua</h4>
+                        <hr />
+                        <p class="dark-grey-text mt-4">
+                            Contacta con nosotros por alguno de nuestros formularios y te contestaremos en menos de 24 horas
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- FIN DETALLES APP -->
+
+<!-- INICIO CTA -->
+<section class="cta-app">
+    <a name="cta" id="cta"></a>
+    <div class="container"> 
+        <div class="row">
+            <!-- Inicio carrusel -->
+            <div class="col-md-6">
+                <div id="carouselExample" class="carousel slide">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="/assets/images/carrusel-home-1.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/assets/images/carrusel-home-2.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/assets/images/carrusel-home-3.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/assets/images/carrusel-home-4.jpg" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+            <!-- Inicio botón a PlayStore -->
+            <div class="col-md-6" style="text-align: center; margin-top: 5%;">
+                <h1>¡Descárgatela ya!</h1>
+                <h2>Obtenla gratis aquí 👇</h2>
+                <a href="https://play.google.com/store/games" target="_blank"><img src="/assets/images/link-playStore.png"
+                        style="width: 50%;"></a>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- FIN CTA -->
+
+<!-- INICIO REVIEWS -->
+<section>
+    <div class="container py-5">
+      <div class="row d-flex justify-content-center">
         <div class="col-md-10 col-xl-8 text-center">
-            <h1>¿Qué ofrecemos?</h1>
-            <p class="mb-4 pb-2 mb-md-5 pb-md-0">
-                AUM es una iniciativa que tiene como objetivo ofrecer una nueva vida a la multitud de mascotas sin
-                hogar que hay en España
-            </p>
+          <h1 class="fw-bold mb-4 mt-5">Reviews de nuestros usuarios</h1>
+          <p class="mb-4 pb-2 mb-md-5 pb-md-0">
+            A continuación te mostramos comentarios de usuarios que han utilizado <br>
+            "Adopta a Una Mascota" y quieren compartir su experiencia con la comunidad.
+          </p>
         </div>
-    </div>
+      </div>
+  
+      <div class="row text-center">
 
-    <div class="row text-center d-flex align-items-stretch">
-        <div class="col-md-4 mb-5 mb-md-0 d-flex align-items-stretch">
-            <div class="card testimonial-card">
-                <div class="card-up" style="background-color: #EED1E6;"></div>
-                <div class="avatar mx-auto bg-white">
-                    <img src="/assets/images/cercania.png"
-                        class="rounded-circle img-fluid" />
+        <div class="col-md-4 mb-4 mb-md-0">
+          <div class="card">
+            <div class="card-body py-4 mt-2">
+              <div class="d-flex justify-content-center mb-4">
+                <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(10).webp"
+                  class="rounded-circle shadow-1-strong" width="100" height="100" />
+              </div>
+              <h5 class="font-weight-bold">Teresa Pérez</h5>
+              <ul class="list-unstyled d-flex justify-content-center">
+                <li>
+                    <i class="bi bi-star-fill text-info" style="color: #F6A83F !important;"></i>
+                </li>
+                <li>
+                    <i class="bi bi-star-fill text-info" style="color: #F6A83F !important;"></i>
+                </li>
+                <li>
+                    <i class="bi bi-star-fill text-info" style="color: #F6A83F !important;"></i>
+                </li>
+                <li>
+                    <i class="bi bi-star-fill text-info" style="color: #F6A83F !important;"></i>
+                </li>
+                <li>
+                    <i class="bi bi-star-fill text-info" style="color: #F6A83F !important;"></i>
+                </li>
+              </ul>
+              <p class="mb-2">
+                Lo que más me gusta es que se preocupan por el bienestar de las mascotas entrevistando
+                a los adoptantes antes de aprobar una adopción
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-4 mb-md-0">
+            <div class="card">
+              <div class="card-body py-4 mt-2">
+                <div class="d-flex justify-content-center mb-4">
+                  <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(9).webp"
+                    class="rounded-circle shadow-1-strong" width="100" height="100" />
                 </div>
-                <div class="card-body">
-                    <h4 class="mb-4">Cercanía</h4>
-                    <hr />
-                    <p class="dark-grey-text mt-4">
-                        Ponemos en contacto a particulares o protectoras con personas que busquen un nuevo compañero de vida
-                    </p>
-                </div>
+                <h5 class="font-weight-bold">Juan González</h5>
+                <ul class="list-unstyled d-flex justify-content-center">
+                    <li>
+                        <i class="bi bi-star-fill text-info" style="color: #F6A83F !important;"></i>
+                    </li>
+                    <li>
+                        <i class="bi bi-star-fill text-info" style="color: #F6A83F !important;"></i>
+                    </li>
+                    <li>
+                        <i class="bi bi-star-fill text-info" style="color: #F6A83F !important;"></i>
+                    </li>
+                    <li>
+                        <i class="bi bi-star-fill text-info" style="color: #F6A83F !important;"></i>
+                    </li>
+                    <li>
+                        <i class="bi bi-star-fill text-info" style="color: #F6A83F !important;"></i>
+                    </li>
+                  </ul>
+                <p class="mb-2">
+                  Adopté a mi mejor amigo en ella y ya no puedo vivir sin él!!
+                  La app es súper fácil de usar y te muestra muchos animales que se adaptan a lo que buscas
+                </p>
+              </div>
             </div>
         </div>
-        <div class="col-md-4 mb-5 mb-md-0 d-flex align-items-stretch">
-            <div class="card testimonial-card">
-                <div class="card-up" style="background-color: #8EA4D4;"></div>
-                <div class="avatar mx-auto bg-white">
-                    <img src="/assets/images/seguridad.png"
-                        class="rounded-circle img-fluid" />
+
+        <div class="col-md-4 mb-4 mb-md-0">
+            <div class="card">
+              <div class="card-body py-4 mt-2">
+                <div class="d-flex justify-content-center mb-4">
+                  <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(7).webp"
+                    class="rounded-circle shadow-1-strong" width="100" height="100" />
                 </div>
-                <div class="card-body">
-                    <h4 class="mb-4">Seguridad</h4>
-                    <hr />
-                    <p class="dark-grey-text mt-4">
-                        Supervisamos las entrevistas previas 
-                        a la entrega de la mascota y tratamos tus datos con precaución
-                    </p>
-                </div>
+                <h5 class="font-weight-bold">Marina Ruiz</h5>
+                <ul class="list-unstyled d-flex justify-content-center">
+                    <li>
+                        <i class="bi bi-star-fill text-info" style="color: #F6A83F !important;"></i>
+                    </li>
+                    <li>
+                        <i class="bi bi-star-fill text-info" style="color: #F6A83F !important;"></i>
+                    </li>
+                    <li>
+                        <i class="bi bi-star-fill text-info" style="color: #F6A83F !important;"></i>
+                    </li>
+                    <li>
+                        <i class="bi bi-star-fill text-info" style="color: #F6A83F !important;"></i>
+                    </li>
+                    <li>
+                        <i class="bi bi-star-fill text-info" style="color: #F6A83F !important;"></i>
+                    </li>
+                  </ul>
+                <p class="mb-2">
+                  ¡Completamente recomendable! Te permite filtrar la búsqueda para encontrar
+                  el compañero perfecto y el equipo de adopción es muy amable y servicial 
+                </p>
+              </div>
             </div>
         </div>
-        <div class="col-md-4 mb-0 d-flex align-items-stretch">
-            <div class="card testimonial-card">
-                <div class="card-up" style="background-color: #F6A83F;"></div>
-                <div class="avatar mx-auto bg-white">
-                    <img src="/assets/images/asistencia.png"
-                        class="rounded-circle img-fluid" />
-                </div>
-                <div class="card-body">
-                    <h4 class="mb-4">Asistencia continua</h4>
-                    <hr />
-                    <p class="dark-grey-text mt-4">
-                        Contacta con nosotros por alguno de nuestros formularios y te contestaremos en menos de 24 horas
-                    </p>
-                </div>
-            </div>
-        </div>
+
+      </div>
     </div>
-</div>
-
-<a name="cta" id="cta"></a>
-<div class="row cta-app">
-    <div class="col-md-6">
-        <div id="carouselExample" class="carousel slide">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="/assets/images/carrusel-home-1.jpg" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="/assets/images/carrusel-home-2.jpg" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="/assets/images/carrusel-home-3.jpg" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="/assets/images/carrusel-home-4.jpg" class="d-block w-100" alt="...">
-                </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-        </div>
-    </div>
-
-    <div class="col-md-6" style="text-align: center; margin-top: 5%;">
-        <h1>¡Descárgatela ya!</h1>
-        <h2>Obtenla gratis aquí 👇</h2>
-        <a href="https://play.google.com/store/games" target="_blank"><img src="/assets/images/link-playStore.png"
-                style="width: 50%;"></a>
-    </div>
-</div>
-
-<div class="row form-adopcion">
-    <h1>Formulario de adopción</h1>
-    <br>
-    <br>
-    <br>
-    <p>Si eres una protectora con animales para visibilizar o un particular con una mascota de la que ya no te puedes
-        encargar, ponte en contacto con nosotros y te ayudaremos a encontrarle un nuevo hogar</p>
-    <br>
-    <br>
-    <app-contact-form></app-contact-form>
-</div>
-
-<app-footer></app-footer>
+</section>
+<!-- FIN REVIEWS -->

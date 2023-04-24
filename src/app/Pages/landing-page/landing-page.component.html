@@ -3,10 +3,13 @@
     <!--INCLUIMOS EL HEADER-->
 </app-header>
 
+<router-outlet>
+   
+</router-outlet>
 
-<app-contact-form>
-    <!--INCLUIMOS EL FORMULARIO DE CONTACTO-->
-</app-contact-form>
+<ng-container *ngIf="mostrarAviso">
+    <app-cookies></app-cookies>
+</ng-container>
 
 <app-footer>
     <!--INCLUIMOS EL FOOTER-->

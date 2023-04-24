@@ -10,6 +10,10 @@
     src: url(/assets/fonts/Poppins-ExtraLight.ttf) format("opentype");
 }
 
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
 h1 {
     font-family: "poppins-bold";
  }
@@ -21,19 +25,29 @@ h1 {
 /* IMÁGENES */
 
 .image-home {
-   height: 60%;
+    height: 60%;
 }
 
 /* CONTENEDORES */
 
 .introduccion {
     padding: 5%;
-    background-image: url("/assets/images/bkg.JPG");
+    background-image: url("/assets/images/header.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     height: 700px;
     margin-top: 150px;
+}
+
+.introduccion-sm {
+    padding: 5%;
+    background-image: url("/assets/images/header.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: 150px;
+    height: 300px;
 }
 
 .cta-app {

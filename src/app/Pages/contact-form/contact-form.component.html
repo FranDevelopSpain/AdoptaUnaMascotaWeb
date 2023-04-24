@@ -1,20 +1,38 @@
+<body>
 
 <head>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap" rel="stylesheet">
 </head>
-  
+
+<div class="row form-adopcion">
+  <h1>Formulario de adopción</h1>
+  <br>
+  <br>
+  <br>
+
+  <div id="info">
+  <img src="./assets/images/fondopets.jpg" id="imagen" class="float-right">
+  <p>Si eres una protectora con animales para visibilizar o un particular con una mascota de la que ya no te puedes
+      encargar, rellena este formulario y te ayudaremos a encontrarle un nuevo hogar</p>
+  </div>
+
+  <br>
+  <br>
+
+</div>
+
     <div id="flotante">
     <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm" class="justify-content-center" id="formulario"> <!--creamos nuestra variable template-->
   
       <div class="form-group row">
           <div class="col-12 col-md-6 bloque">
             <label for="nombre">Nombre <span style="color: #8FA5D5"> *</span> </label>
-            <input type="text" class="form-control" name="nombre" #nombre [(ngModel)]="ContactModel.nombre" id="nombre" required  (keyup)="this.validarCamposObligatorios($event)">
+            <input type="text" class="form-control" name="nombre" #nombre [(ngModel)]="ContactModel.nombre" id="nombre" minlength="3" (keyup)="this.validarCamposObligatorios($event)">
             <div class="invalid-feedback">
               Introduzca nombre válido mínimo 3 caracteres
-            </div>
+          </div>
           </div>
     
           <div class="col-12 col-md-6 bloque">
@@ -167,4 +185,4 @@
     </form>
   </div> <!--elemento flotante-->
     
-    
+    </body>

@@ -7,10 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LandingPageComponent implements OnInit{
 
-  constructor() {}
-
-  ngOnInit(): void {
-    
+  mostrarAviso = true;
+  
+  constructor() {
+    if(localStorage.getItem("cookie")) {
+      this.mostrarAviso = false;
+    };
   }
 
+  ngOnInit(): void {}
 }
