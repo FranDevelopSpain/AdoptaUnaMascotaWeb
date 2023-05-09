@@ -73,6 +73,8 @@ img {
 /*--
 /*  3.1 - Header CSS
 /*----------------------------------------*/
+
+
 .header-area {
   padding: 0px 0;
   background-color: #b1bfe2;
@@ -85,7 +87,7 @@ img {
   transition: all 0.3s linear;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px), only screen and (max-width: 767px) {
-  .header-area {
+  #header-area {
     padding: 15px 0;
   }
 }
@@ -352,7 +354,7 @@ img {
   background-color: #292C35;
   color: #F7A940 !important;
   border-radius: 10px;
-  padding: auto;
+  padding: 5px 20px 3px 20px;
   text-align: center;
   justify-content: center;
   padding-bottom: 5px !important;
@@ -363,8 +365,22 @@ img {
   background-color: #F7A940;
   color: #292C35 !important;
   border-radius: 10px;
-  padding: auto;
   text-align: center;
   justify-content: center;
   padding-bottom: 5px !important;
+}
+
+#adopcionResponsive {
+  background-color: #292C35;
+  text-align: center;
+  justify-content: center;
+  color: #F7A940 !important;
+  padding: 5px 8px 5px 5px !important;
+  width: 70%;
+  border-radius: 10px;
+}
+
+#adopcionResponsive:hover {
+  background-color: #F7A940;
+  color: #292C35 !important;
 }
