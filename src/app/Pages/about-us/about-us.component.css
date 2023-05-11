@@ -1,0 +1,162 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    justify-content: center !important;
+    justify-items: center !important;
+    align-items: center !important;
+    font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 5rem;
+    padding: 20px;
+    color: #292C35;
+    font-weight: bold;
+    text-shadow: 5px 5px 4px #8FA5D5;
+    margin-top: 200px;
+}
+
+h3 {
+    font-weight: bold;
+    text-align: center;
+}
+h6 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    color: #8FA5D5; 
+}
+
+.card-img-top {
+    height: 18rem !important;
+    object-fit: cover !important;
+    border-radius: 5%;
+    padding-top: 10px;
+}
+
+.card {
+    margin: 10px;
+    border-color: #D18DBC;
+    border-width: 2px;
+    box-shadow: 0px 0px 8px 8px rgba(240,240,240,1);
+}
+.uno {
+    justify-content: center;
+    animation-name: slideInRight;
+    animation-duration: 4s;
+    animation-delay: 0s;
+    animation-fill-mode: forwards;
+}
+.dos {
+    justify-content: space-evenly;
+    animation-name: slideInLeft;
+    animation-duration: 5s;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+.img-fluid {
+    width: 300px;
+}
+
+#logo {
+    margin: 0;
+    text-align: center;
+}
+
+.btn-link {
+    color: #D18DBC;
+}
+
+#adopta {
+    color: #F7A940;
+    font-weight: bold;
+}
+
+#rosa {
+    border-style: solid;
+    border-color: #F7A940;
+    border-width: 4px;
+    padding: 50px;
+    border-radius: 10px;
+    background-color: #D18DBC;
+    margin-bottom: 40px;
+}
+
+#azul {
+    border-style: solid;
+    border-color: #D18DBC;
+    border-width: 4px;
+    padding: 50px;
+    border-radius: 10px;
+    background-color: #8FA5D5;
+    margin-bottom: 40px;
+}
+
+#amarillo {
+    border-style: solid;
+    border-color: #8FA5D5;
+    border-width: 4px;
+    padding: 50px;
+    border-radius: 10px;
+    background-color: #F7A940;
+    margin-bottom: 40px;
+}
+
+
+#imagenTres, #imagenUno{
+    float: left;
+    width: 300px;
+    padding: 10px;
+    border-radius: 10% !important;
+}
+
+#imagenDos {
+    float: right;
+    width: 300px;
+    padding: 10px;
+    border-radius: 10% !important; 
+}
+
+.container {
+    margin-top: 10px;
+}
+
+#filaUno p, #filaDos p, #filaTres p {
+    font-size: 1.2rem;
+    color: #292C35
+}
+
+.uno .card {
+    margin-right: 40px;
+    margin-left: 40px;
+}
+
+
+/*ANIMACION*/
+  @keyframes slideInLeft {
+    from {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+
+  @keyframes slideInRight {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(0%);
+    }
+  }
+ 
