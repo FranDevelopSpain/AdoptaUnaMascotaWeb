@@ -50,4 +50,10 @@ footer {
 
 .text-reset:hover {
     color: #8FA5D5 !important;
+    text-decoration: underline;
 }
+
+.text-reset {
+    text-decoration: none;
+}
+
